@@ -1,0 +1,69 @@
+.ui-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-color: transparent !important;
+    width: 86% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    background-color: transparent;
+    margin-top: -5px;
+
+    &-item{
+        margin: -2px 0 !important;
+    }
+}
+
+.inputSearch__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px !important;
+    background-color: $color-light-300 !important;
+    border: none !important;
+    cursor: pointer;
+    @include transition();
+    
+    .title {
+        color: $color-dark-200;
+        font-size: 15px;
+        
+        .highlighted {
+            font-family: 'us-bold';
+            font-size: 15px;
+            letter-spacing: 1.4;
+        }
+    }
+    
+    .desc {
+        font-family: 'us-bold';
+        font-size: 13px;
+        text-decoration: underline;
+    }
+    
+    &:hover {
+        background-color: $color-primary !important;
+        border: none !important;
+        
+        .title,
+        .desc {
+            color: #fff;
+        }
+    }
+    
+}
+
+.ui-autocomplete {
+    opacity: 0;
+    display: none;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    pointer-events: none;
+}
+
+.ui-autocomplete.opened {
+    opacity: 1;
+    pointer-events: all;
+}

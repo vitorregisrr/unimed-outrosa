@@ -1,0 +1,51 @@
+.main-footer {
+    font-family: 'us-bold';
+    position: relative;
+    padding: 25px 0;
+    width: 100%;
+    background-color: #F4F4F4;
+    margin-top: auto;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: $bp-MD){
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__copyright {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        color: $color-dark-100;
+        margin: 0;
+
+        @media screen and (max-width: $bp-MD){
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+            
+            span{
+                display: block;
+
+                &.divisor{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__ANS{
+        img{
+            height: 38px;
+
+            @media screen and (max-width: $bp-MD){
+                height: 42px;
+            }
+        }
+    }
+}

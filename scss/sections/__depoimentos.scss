@@ -1,0 +1,21 @@
+.depoimentos{
+    &__title{
+        font-size: 24px;
+        color: #333333;
+        
+
+        strong{
+            font-family: 'us-bold';
+            color: $color-primary;
+
+            @media screen and (max-width: $bp-MD){
+                color: $color-primary-mobile;
+            }
+        }
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 19px;
+            padding-right: 40px;
+        }
+    }
+}

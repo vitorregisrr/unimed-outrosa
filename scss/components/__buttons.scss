@@ -1,0 +1,40 @@
+.btn-transparent{
+    background: none !important;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    
+    &:active, &:focus{
+        border: none;
+        outline: none;
+    }
+}
+
+.btn-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: $color-primary;
+    margin-right: 6px;
+    color: #fff;
+    @include transition();
+
+    &.btn-facebook{
+        background-color: #4B72BB;
+    }
+
+    &.btn-whataspp{
+        background-color: #22C5AE;
+        font-size: 12px;
+    }
+
+    &:hover{
+        color: #fff;
+        @include scale(1.05);
+    }
+}

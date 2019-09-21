@@ -1,0 +1,50 @@
+.depoimento-page {
+    &__tags {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: $bp-MD){
+            justify-content: flex-start;
+            padding-left: 20px;
+        }
+
+        .item {
+            color: $color-primary;
+            font-size: 14px;
+            margin-right: 5px;
+
+            @media screen and (max-width: $bp-MD) {
+                color: $color-primary-mobile;
+            }
+
+            &:hover {
+                color: darken($color-primary, 10);
+            }
+        }
+    }
+
+    &__autor {
+        font-family: 'us-bold';
+        color: #999999;
+        font-size: 20px;
+        text-align: center;
+
+        @media screen and (max-width: $bp-MD){
+            text-align: left;
+            padding-left: 20px;
+        }
+
+    }
+
+    &__more {
+        font-family: 'us-bold';
+        color: #999999;
+        font-size: 22px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 16px;
+            padding: 0 10px;
+        }
+    }
+}

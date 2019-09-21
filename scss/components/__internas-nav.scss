@@ -1,0 +1,103 @@
+.internas-nav {
+    background-color: $color-primary;
+    width: 100%;
+    z-index: 5;
+    @include transition();
+
+    @media screen and (max-width: $bp-MD){
+        background-color: $color-primary-mobile;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 16px 30px;
+
+        @media screen and (max-width: $bp-LG){
+            justify-content: space-between;
+        }
+    }
+
+    &__brand {
+        margin-right: 50px;
+
+        @media screen and (max-width: $bp-XL){
+            margin-right: 30px;
+        }
+
+        img {
+            filter: brightness(0) invert(1);
+            width: 130px;
+
+            @media screen and (max-width: $bp-MD) {
+                width: 150px;
+            }
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+
+        @media screen and (max-width: $bp-LG){
+            display: none;
+        }
+        
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+        padding: 10px 11px;
+        font-size: 16px;
+        color: #fff;
+        text-transform: lowercase;
+        @include transition();
+        
+        a{
+            color: inherit;
+            @include transition();
+        }
+
+        &.active,
+        &:active,
+        &:hover {
+            &>a {
+                text-shadow: .3px .3px 0 white;
+            }
+        }
+
+        @media screen and (max-width: $bp-XL){
+            font-size: 14px;
+            white-space: nowrap;
+        }
+    }
+
+
+    &__toggler {
+        display: none;
+        align-items: center;
+        font-size: 32px;
+        color: #fff;
+
+        @media screen and (max-width: $bp-LG) {
+            display: block;
+        }
+    }
+
+    &__search{
+        width: 500px;
+        margin-left: auto;
+
+        @media screen and (max-width: $bp-LG){
+            display: none;
+        }
+
+        @media screen and (min-width: 1500px){
+            width: 600px;
+        }
+    }
+}

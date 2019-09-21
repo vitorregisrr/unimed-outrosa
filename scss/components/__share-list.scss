@@ -1,0 +1,19 @@
+.share-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span{
+        font-size: 15px;
+        font-family: 'us-bold';
+        color: #999999;
+        
+    }
+
+    &__medias{
+        display: flex;
+        justify-content: center;
+        padding-top: 7px;
+    }
+}

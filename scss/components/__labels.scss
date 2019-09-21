@@ -1,0 +1,38 @@
+.label-primary{
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: $color-light-100;
+    color: $color-primary;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.012);
+    @include transition();
+
+    &:hover, &.active{
+        background-color: $color-primary;
+        color: #fff;
+    }
+
+    @media screen and (max-width: $bp-MD){
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    &.outline{
+        font-size: 17px;
+        background-color: transparent;
+        border: 1.7px solid $color-primary-mobile;
+        color: #fff;
+        padding: 7px 17px;
+
+        &:hover{
+            background-color: $color-primary-mobile;
+        }
+
+    }
+}

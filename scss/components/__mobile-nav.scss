@@ -1,0 +1,79 @@
+.mobile-nav {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 5;
+    opacity: 0;
+    padding-bottom: 40px;
+    pointer-events: none;
+    @include transition();
+
+    &.active{
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 15px;
+        margin-bottom: 9%;
+    }
+
+    &__brand {
+        img {
+            filter: brightness(0) invert(1);
+            width: 130px;
+
+            @media screen and (max-width: $bp-MD) {
+                width: 150px;
+            }
+        }
+    }
+
+    &__close{
+        font-size: 35px;
+        color: #fff;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    &__item{
+        font-size: 21px;
+        color: #fff;
+        margin-bottom: 5px;
+
+        a{
+            color: inherit;
+        }
+    }
+
+    &__labels{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+
+        span{
+            font-size: 15px;
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+    }
+}

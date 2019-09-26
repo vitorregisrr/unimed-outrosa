@@ -25,7 +25,7 @@
         display: block;
         padding: 10px 11px;
         font-size: 16px;
-        color: $color-dark-200;
+        color: $color-primary;
         text-transform: lowercase;
         @include transition();
         
@@ -38,7 +38,7 @@
         &:active,
         &:hover {
             &>a {
-                color: $color-primary;
+                color: darken($color-primary, 10);
             }
         }
     }

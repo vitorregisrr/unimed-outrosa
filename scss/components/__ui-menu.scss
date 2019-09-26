@@ -27,6 +27,7 @@
     .title {
         color: $color-dark-200;
         font-size: 15px;
+        @include transition();
         
         .highlighted {
             font-family: 'us-bold';
@@ -36,9 +37,10 @@
     }
     
     .desc {
-        font-family: 'us-regular';
+        font-family: 'us-book';
         font-size: 12px;
         text-decoration: underline;
+        @include transition();
     }
     
     &:hover {

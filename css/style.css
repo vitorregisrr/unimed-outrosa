@@ -760,7 +760,7 @@ button:focus {
 .home-nav__content {
   display: flex;
   justify-content: center;
-  padding: 24px 10px;
+  padding: 10px 10px 24px 10px;
 }
 
 .home-nav__list {
@@ -844,6 +844,11 @@ button:focus {
 .inputSearch__item .title {
   color: #2A2A2A;
   font-size: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .inputSearch__item .title .highlighted {
@@ -853,9 +858,14 @@ button:focus {
 }
 
 .inputSearch__item .desc {
-  font-family: 'us-regular';
+  font-family: 'us-book';
   font-size: 12px;
   text-decoration: underline;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .inputSearch__item:hover {
